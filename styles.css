@@ -103,7 +103,7 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
 
 @keyframes moveText {
     0% {
-        left: 40%;
+        left: 100%;
         opacity: 1;
     }
     80% {
@@ -111,7 +111,7 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
         opacity: 1;
     }
     100% {
-        left: -40%;
+        left: -20%;
         opacity: 0;
     }
 }
@@ -121,12 +121,12 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
     25% { color: yellow; }
     50% { color: blue; }
     75% { color: green; }
-    100% { color: red; }
+    63% { color: red; }
 }
 .subtitle {
   font-size: 1.6em;
   color: #fff;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
   opacity: 0.9;
   animation: fadeIn 1.8s ease-out 0.2s both;
 }
