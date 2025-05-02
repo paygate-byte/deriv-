@@ -29,11 +29,6 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
   position: relative;
   z-index: 1;
 }
-p {
-    font-size: 16px;
-    color: gray;
-    font-style: italic;
-}
 /* ========== NAVBAR ========== */
 .navbar {
   width: 100%;
@@ -93,6 +88,14 @@ p {
   animation: fadeIn 1.5s ease-out;
   margin-bottom: 18px;
   max-width: 90vw;
+}
+.welcome::after {
+    content: " by @Collins";
+    display: block;
+    font-size: 1.2em;
+    color: gray;
+    font-style: italic;
+    margin-top: 8px;
 }
 .subtitle {
   font-size: 1.6em;
