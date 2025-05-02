@@ -77,20 +77,8 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
   margin-bottom: 58px;
   position: relative;
 }
-.welcome {
-  font-size: 3rem;
-  font-weight: bold;
-  background: linear-gradient(to right, #ff6f00, #fff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.22);
-  animation: fadeIn 1.5s ease-out;
-  margin-bottom: 18px;
-  max-width: 90vw;
-}
-.welcome::after {
-    content: " by @Collins";
+.by::after {
+    content: "@Collins";
     display: block;
     font-size: 1.2em;
     font-style: italic;
@@ -100,7 +88,6 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
     white-space: nowrap;
     animation: moveText 5s linear infinite, colorChange 5s infinite;
 }
-
 @keyframes moveText {
     0% {
         left: 100%;
@@ -122,6 +109,18 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
     50% { color: blue; }
     75% { color: green; }
     63% { color: red; }
+}
+.welcome {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff6f00, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.22);
+  animation: fadeIn 1.5s ease-out;
+  margin-bottom: 18px;
+  max-width: 90vw;
 }
 .subtitle {
   font-size: 1.6em;
