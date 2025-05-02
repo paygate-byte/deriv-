@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Deriv</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .contact-form { background: rgba(255,255,255,0.1); border-radius: 12px; padding: 30px; margin-top: 35px; color: #fff; max-width: 450px; margin-left:auto; margin-right:auto; box-shadow: 0 7px 18px rgba(0,0,0,0.07); }
+    .form-group { margin-bottom: 22px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: #ff6f00; }
+    .form-group input, .form-group textarea { width: 100%; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.2); color: #333; font-size: 1em; }
+    .form-group input:focus, .form-group textarea:focus { outline: 2px solid #ff6f00; background: #fff; }
+    .submit-button { background-color: #ff6f00; color: #fff; padding: 13px 28px; border-radius: 5px; border: none; font-size: 1.1em; transition: background 0.2s; font-weight: 600; cursor: pointer; }
+    .submit-button:hover { background: #ff8c42; }
+    .contact-info { text-align: center; color: #fff; margin-top: 28px; }
+    .contact-info h2 { color: #ff6f00; }
+    .contact-methods { display: flex; gap: 32px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
+    .contact-method { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 20px 28px; text-align: center; min-width: 160px; }
+    .contact-icon { font-size: 2.1em; color: #ff8c42; margin-bottom: 8px; }
+    .contact-link { color: #fff; text-decoration: underline; }
+    @media (max-width:600px) {
+      .contact-methods { flex-direction: column; gap: 17px; }
+      .contact-form { padding: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="particles" id="particles"></div>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><span class="logo-icon"></span>Deriv</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+    <div class="content">
+      <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We're here to help with any questions you may have about Deriv trading</p>
+      </section>
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <h3>WhatsApp</h3>
+            <a class="contact-link" href="https://wa.me/255785069715" target="_blank">+255 785 069 715</a>
+          </div>
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Email</h3>
+            <a class="contact-link" href="mailto:info@derivportal.com">info@derivportal.com</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! Your message has been received.');this.reset();">
+        <h2 style="color:#ff6f00; margin-bottom:17px;">Send Us a Message</h2>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+        </div>
+        <button class="submit-button" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><strong>Disclaimer:</strong> Trading involves risk. This website is for informational purposes only.</p>
+        <p>&copy; 2025 Deriv Information Portal. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
