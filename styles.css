@@ -119,11 +119,11 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
   color: transparent;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.22);
   animation: fadeIn 1.5s ease-out;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   max-width: 90vw;
 }
 .subtitle {
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: #fff;
   margin-bottom: 13px;
   opacity: 0.9;
