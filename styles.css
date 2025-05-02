@@ -29,7 +29,11 @@ button { cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; }
   position: relative;
   z-index: 1;
 }
-
+p {
+    font-size: 16px;
+    color: gray;
+    font-style: italic;
+}
 /* ========== NAVBAR ========== */
 .navbar {
   width: 100%;
